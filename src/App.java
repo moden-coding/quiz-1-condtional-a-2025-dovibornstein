@@ -39,7 +39,19 @@ public class App {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-
+        System.out.println("Give a number:");
+        int number = Integer.valueOf(scanner.nextLine());
+        if (number %2.0==0.0)
+        System.out.println("This number is even.");
+        else
+        System.out.println("This number is odd.");
         
+        System.out.println("Give a second number:");
+        int max = Integer.valueOf(scanner.nextLine());
+        if (max <=0.0)
+        System.out.println("Error");
+        else 
+        System.out.println(max / number);
+        System.out.println(number "is " + max / number "% of" + max);
     }
 }
